@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background-image: linear-gradient(to bottom right, rgb(47, 208, 248),rgb(253, 18, 163));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.head{
+    text-align: center;
+    font-family: "Poppins";
+    color:greenyellow;
+}
+
+.grid{
+    display: grid;
+    /* width: 50%; */
+    margin:auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+.grid_items{
+    margin: 20px;
+    padding: auto;
+} 
+section{
+    font-family: "Poppins";
+    background-color: rgb(128, 0, 43);
+    color: rgb(250, 166, 10);
+    outline: none;
+    border:2px solid rgb(250, 166, 10);
+    font-size: 30px;
+}
+
+option{
+    font-family: "Poppins";
+    background-color: rgb(128, 0, 43);
+    color: rgb(250, 166, 10);
+    padding:5px;
+    border:2px solid rgb(250, 166, 10);
+    font-size: 20px;
+}
+input{
+    outline: none;
+    border:2px solid rgb(128, 0, 43);
+    font-size: 20px;
+}
+input::placeholder{
+    color: rgb(128, 0, 43);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#getCurr{
+    display: block;
+    margin: 20px auto;
+    font-family: "Poppins";
+    font-size: 20px;
+    padding: 5px 30px;
+    color: rgb(4, 138, 4);
+    background-color: greenyellow;
+    border:none;
+}
+#getCurr:hover{
+    transition: all 0.25s;
+    color: greenyellow;
+    background-color:rgb(4, 138, 4);
+}
+ 
+#getCurr:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  @media (max-width:600px) {
+    .grid{
+        display: grid;
+        /* width: 50%; */
+        margin:auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        text-align: center;
+    }
+  }
